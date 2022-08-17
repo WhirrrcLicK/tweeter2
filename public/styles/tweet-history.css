@@ -1,0 +1,17 @@
+.tweet-history {
+  display:flex;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.tweeter-user {
+  display: flex;
+  width: 90%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  align-content:stretch;
+}
+
