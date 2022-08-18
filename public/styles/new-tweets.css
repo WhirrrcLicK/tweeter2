@@ -11,9 +11,8 @@
 }
 
 .new-tweet h2 {
-  font-size: 16px;
-  margin-right: 41.5rem;
-  color: #525759;
+  font-size: 14px;
+  color: #474631;
 }
 
 form {
@@ -23,9 +22,10 @@ form {
 }
 
 #tweet-text {
+  color: #474631;
   background-color: rgba(255,255,255,0);
   border-style: hidden;
-  border-bottom: 6px solid #525759;
+  border-bottom: 6px solid #474631;
   resize: none;
   font-weight: 600;
   line-height: 1;
@@ -39,23 +39,21 @@ form {
   flex-wrap: nowrap;
   align-items: baseLine;
   padding-top: 1rem;
-  font-family: 'Bungee', cursive;
-  font-size: 16px;
-  color: #FFFFFF;
 }
 
 button {
 display: flex;
 align-items: center;
 font-family: 'Bungee', cursive;
-color: #FFFFFF;
-background-color: #4056A1;
+color: #FBD9B4;
+background-color: #2B270E;
+font-size: 14px;
 }
 
 .counter {
   display: flex;
   float: right;
   font-family: 'Bungee', cursive;
-  font-size: 16px;
-  color: #37393b;
+  font-size: 14px;
+  color: #474631;
 }
