@@ -12,18 +12,29 @@
   border: 3px solid #474631;
 }
 
-.tweet-box:hover {
-  box-shadow: 3px 5px #87795F;
+.user-info {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  align-content: stretch;
 }
 
-.tweet-content{
-  align-items: center;
-  font-size: 18px;
-  border-bottom: 2px solid #474631;
-  padding: 1px 0px 10px 10px;
-  margin-left: .3em;
-  margin-right: .3em;
-  margin-bottom: .1em;
+.username {
+  display: flex;
+  margin-right: 9rem;
+  margin-bottom: 1.5rem;
+}
+
+.at-username {
+  display:flex;
+  flex-direction: flex-end;
+  font-size: 16px;
+  color: #474631;
+  padding-right: 1em;
+  padding-top: .5em;
 }
 
 .fa-skull {
@@ -36,19 +47,38 @@
   padding-bottom: 1em;
 }
 
+.tweet-content {
+  align-items: center;
+  font-size: 18px;
+  border-bottom: 2px solid #474631;
+  padding: 1px 0px 10px 10px;
+  margin-left: .3em;
+  margin-right: .3em;
+  margin-bottom: .1em;
+}
+
+.tweet-box:hover {
+  box-shadow: 3px 5px #87795F;
+}
+
+
 .tweet-age {
   font-size: 10px;
   float: left;
   padding-left: 1em;
   padding-top: .5em;
 }
+
 .icons {
   display: flex;
+  justify-content: space-between;
   float: right;
-  font-size: 12px;
+  font-size: 10px;
   color: #474631;
-  padding: 4px 12px 3px 3px;
+  padding-right: 1em;
+  padding-top: .5em;
 }
+
 .fa-cloud-moon {
   padding-left: 2px;
 }
