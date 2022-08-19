@@ -43,9 +43,9 @@
       </nav>
 
       <!-- Header -->
-      <header class="top-header">
-      <div class="content">
-          <div>
+      <header class="user-header">
+        <div>
+          <div class="user-image">
             <img src="/images/profile-hex.png"> 
           </div>
           <br/>
@@ -54,13 +54,13 @@
               <span class="bolded">Myrtle</span>
               <span class="light">Triproot</span>
             </h2>
-          </div>
+            </div>
         </header>
         
         <!-- Page-specific (main) content here -->
         <main class="container">
         <section class="new-tweet">
-          <h2>What would you like to say?</h2>
+          <p>What would you like to say?</p>
           <form action="/tweets" method="POST /tweets/" id="submit-tweet">
             <label for="tweet-text"></label>
             <textarea
@@ -74,21 +74,7 @@
             </div>
           </form>
         </section>
-        <section class="tweet-box">
-          <header class="user-info"> 
-            <i class="fa-solid fa-skull"></i>
-            <div class="username">Whirrr.CLicK</div>
-            <p class="at-username">@whirrrclick</p>
-          </header>
-          <div class="tweet-content">I fucked up the brownies.</div>
-          <footer class="tweet-footer">
-            <div class="tweet-age">10 days ago</div>
-            <div class="icons">
-            <i class="fa-solid fa-skull-crossbones"></i>
-            <i class="fa-solid fa-crow"></i>
-            <i class="fa-solid fa-cloud-moon"></i>
-            </div>
-          </footer>
+        <section class="all-tweets">
         </section>
       </main>
       </body>

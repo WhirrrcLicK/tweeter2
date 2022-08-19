@@ -1,57 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+.all-tweets {
+  width: 100%
+}
+
 .tweet-box {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1.5em;
-  margin-top: 0.5rem;
+  margin: 10px;
   flex-wrap: nowrap;
-  align-content: space-between;
-  justify-content: flex-start;
   height: 150px;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
   border: 3px solid #474631;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .user-info {
   display: flex;
   flex-direction: row;
-  width: 90%;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  align-content: stretch;
 }
 
-.username {
-  display: flex;
-  margin-right: 9rem;
-  margin-bottom: 1.5rem;
-}
-
-.at-username {
-  display:flex;
-  flex-direction: flex-end;
+.user {
+  width: 75%;
   font-size: 16px;
-  color: #474631;
-  padding-right: 1em;
-  padding-top: .5em;
+  padding-left: 10px;
+  padding-bottom: 70px;
 }
 
-.fa-skull {
-  display: flex;
-  flex-direction: row;
+.user-handle {
+  width: 15%;
+  font-size: 16px;
+  padding-bottom: 70px;
+  opacity: 0.5;
+  font-weight: 400;
+}
+
+.avatar {
   font-size: 35px;
+  width: 10%;
   color: #2B270E;
-  padding-left: 0.2em;
-  padding-top: 0.2em;
-  padding-bottom: 1em;
+  padding: 0px 0px 25px 0px;
 }
 
 .tweet-content {
-  align-items: center;
   font-size: 18px;
   border-bottom: 2px solid #474631;
-  padding: 1px 0px 10px 10px;
   margin-left: .3em;
   margin-right: .3em;
   margin-bottom: .1em;
@@ -61,7 +62,11 @@
   box-shadow: 3px 5px #87795F;
 }
 
-
+.tweet-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+}
 .tweet-age {
   font-size: 10px;
   float: left;
@@ -70,13 +75,10 @@
 }
 
 .icons {
-  display: flex;
-  justify-content: space-between;
   float: right;
-  font-size: 10px;
   color: #474631;
-  padding-right: 1em;
-  padding-top: .5em;
+  padding-right: 5px;
+  padding-top: 2px;
 }
 
 .fa-cloud-moon {

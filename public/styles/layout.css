@@ -1,4 +1,4 @@
-/*
+/* 
  * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
@@ -10,23 +10,21 @@ html {
   box-sizing: inherit;
 }
 
-/*
- * Global layout stuff
- */
+
+ /* * Global layout stuff */
 
  body {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
   color: #474631;
   background-color: #DE8E48;
   background-image: url("https://www.transparenttextures.com/patterns/silver-scales.png");
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 24px;
 }
 
 main {
   display:flex;
-  flex-direction: column;
   background-color: rgba(255,255,255,.1);
-  padding-top: 1vh;
-  margin-left: 5%;
-  margin-right: 5%;
+  width: 90%;
 }
