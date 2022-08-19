@@ -10,8 +10,14 @@ $(document).ready(function() {
   $('#submit-tweet').submit(function(event) {
     const tweetValue = $('#tweet-text').val()
     event.preventDefault();
+    if (tweetValue === null || tweetValue === "") {
+      return alert("You can't submit an empty tweet!")
+    } else if (tweetValue.length > 140) {
+      return alert("Too many characters!")
+    } else {
     $.ajax('/tweets', {method: 'POST', data: $('#tweet-text').serialize()}).then(function() {loadTweets()})
-  })
+  }
+});
 
   const loadTweets = function() {
     $.ajax('/tweets', {method: 'GET'}).then((result) => renderTweets(result))
@@ -27,6 +33,7 @@ $(document).ready(function() {
  };
 
  const createTweetElement = function(tweet) {
+  const timeAgo = timeago.format(new Date());
   let $tweet = `<section class = "tweet-box">
   <header>
   <div class="user-info">
@@ -37,7 +44,7 @@ $(document).ready(function() {
   </header>
   <div class="tweet-content">I fucked up the brownies.</div>
   <footer class="tweet-footer">
-    <div class="tweet-age">10 days ago</div>
+    <div class="tweet-age">${timeAgo}</div>
     <div class="icons">
     <i class="fa-solid fa-skull-crossbones"></i>
     <i class="fa-solid fa-crow"></i>
