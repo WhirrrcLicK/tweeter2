@@ -38,7 +38,8 @@ form {
   border-bottom: 3px solid #474631;
   font-size: 14px;
   font-weight: 600;
-  line-height: 0.5;
+  line-height: 1;
+  margin-top: 10px;
 }
 
 .submit-tweet {
@@ -61,4 +62,24 @@ font-size: 14px;
   font-family: 'Bungee', cursive;
   font-size: 14px;
   color: #474631;
+}
+
+.errors {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+}
+
+.error-empty, .error-exceeds {
+color: #b34a20;
+font-weight: 400;
+display: none;
+border: 2px solid #b34a20;
+padding: 10px;
+}
+
+.fa-book-skull {
+  color: #b34a20;
+  padding: 3px;
+  font-size: 14;
 }

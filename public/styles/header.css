@@ -7,9 +7,10 @@
   flex-direction:column;
   align-items: center;
   justify-content: center;
-  margin-left: 3%;
-  margin-right: 3%;
-  border-radius: 3px;
+  position: relative;
+  width: 100%;
+  height: 450px;
+  background-color: #474631;
 }
 
 .user-image {
@@ -19,11 +20,34 @@
 .user-header h2 {
   display:flex;
   justify-content: center;
+  color: #FBD9B4;
 }
 .bolded {
+  font-weight: 600;
   font-size: 20px;
 }
 
 .light {
+  font-weight: 200;
   font-size: 20px;
+}
+
+@media only screen and (min-width:1024px) {
+  
+  .user-header {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 3px;
+    background-color: #DE8E48;
+    background-image: url("https://www.transparenttextures.com/patterns/silver-scales.png");
+  }
+
+  .user-header h2 {
+    display:flex;
+    justify-content: center;
+}
 }

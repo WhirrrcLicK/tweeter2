@@ -7,13 +7,13 @@
   justify-content: space-between;
   font-family: 'Source Sans Pro', sans-serif;
   align-items: center;
+  z-index: 2;
   height:120px;
   width: 100%;
   background-color: #474631;
   color: #FBD9B4;
   padding-inline: 1.5em;
   position: fixed;
-  box-shadow:0 8px 8px 0 rgba(0,0,0,.2);
 }
 #logo {
   display: flex;
@@ -34,11 +34,31 @@
 .fa-angles-down {
   display: flex;
   flex-direction: column;
-  padding-right: 2.5em; 
+  padding-right: 38px;;
+  padding-bottom: 10px; 
   font-size: 12px;
   color: #87795F;
+}
+.fa-angles-down:hover {
+  color: #b34a20
 }
 
 .bolded {
   font-weight: 600;
+}
+
+@media only screen and (min-width: 1024px) {
+  
+  .navbar {
+    display:flex;
+    justify-content: space-between;
+    font-family: 'Source Sans Pro', sans-serif;
+    align-items: center;
+    height:120px;
+    width: 100%;
+    background-color: #474631;
+    color: #FBD9B4;
+    padding-inline: 1.5em;
+    box-shadow:0 8px 8px 0 rgba(0,0,0,.2);
+  }
 }

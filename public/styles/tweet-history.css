@@ -3,59 +3,59 @@
 }
 
 .all-tweets {
-  width: 100%
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .tweet-box {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   margin: 10px;
-  flex-wrap: nowrap;
-  height: 150px;
+  height: 150px;;
   border: 3px solid #474631;
 }
 
-.header {
+.tweet-header {
   display: flex;
   flex-direction: row;
-  align-items: center;
-}
-
-.user-info {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
+  align-content: center;
+  height: 40%;
+  width: 100%;
 }
 
 .user {
-  width: 75%;
+  float: left;
   font-size: 16px;
-  padding-left: 10px;
-  padding-bottom: 70px;
+  margin-left: 10px;
+  width: 100%;
 }
 
 .user-handle {
-  width: 15%;
+  float: right;
   font-size: 16px;
-  padding-bottom: 70px;
   opacity: 0.5;
   font-weight: 400;
+  margin-right: 10px;
 }
 
 .avatar {
+  float: left;
   font-size: 35px;
-  width: 10%;
   color: #2B270E;
-  padding: 0px 0px 25px 0px;
+  margin-left: 5px;
+  margin-top: 5px;
 }
 
 .tweet-content {
   font-size: 18px;
+  word-break: break-all;
   border-bottom: 2px solid #474631;
-  margin-left: .3em;
-  margin-right: .3em;
-  margin-bottom: .1em;
+  margin-left: 5px;
+  margin-right: 5px;;
+  margin-top: 20px;
 }
 
 .tweet-box:hover {
@@ -70,8 +70,8 @@
 .tweet-age {
   font-size: 10px;
   float: left;
-  padding-left: 1em;
-  padding-top: .5em;
+  padding-left: 10px;
+  padding-top: 2px;
 }
 
 .icons {
@@ -83,11 +83,22 @@
 
 .fa-cloud-moon {
   padding-left: 2px;
+  padding-right: 5px;
+}
+
+.fa-cloud-moon:hover {
+  color:#b34a20;
 }
 .fa-skull-crossbones {
   padding-right: 2px;
 }
+.fa-skull-crossbones:hover {
+  color:#b34a20;
+}
 .fa-crow {
   padding-left: 4px;
   padding-right: 4px;
+}
+.fa-crow:hover {
+  color:#b34a20;
 }

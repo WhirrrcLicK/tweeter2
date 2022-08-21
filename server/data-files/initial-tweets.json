@@ -1,24 +1,24 @@
 [
   {
     "user": {
-      "name": "Newton",
+      "name": "Cecil",
       "avatars": "https://i.imgur.com/73hZDYK.png",
-      "handle": "@SirIsaac"
+      "handle": "@WTNVradio"
     },
     "content": {
-      "text": "If I have seen further it is by standing on the shoulders of giants"
+      "text": "Be careful what you wish for, because it probably won't come true and life is mostly about expectation management."
     },
-    "created_at": 1660705699845
+    "created_at": 1660940284495
   },
   {
     "user": {
-      "name": "Descartes",
+      "name": "Calvin",
       "avatars": "https://i.imgur.com/nlhLi3I.png",
-      "handle": "@rd"
+      "handle": "@BoogerEater"
     },
     "content": {
-      "text": "Je pense , donc je suis"
+      "text": "It's not denial, I'm just very selective about the reality I accept."
     },
-    "created_at": 1660792099845
+    "created_at": 1661026684495
   }
 ]

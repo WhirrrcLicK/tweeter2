@@ -32,6 +32,7 @@
   </head>
   
   <body>
+    
     <!-- Top nav bar (fixed) -->
     <nav class="navbar">
       <span id="logo">tweeter</span>
@@ -40,7 +41,9 @@
       <span class="bolded">Write</span>
       <span class="light">a new tweet</span>
       </p>
-        <i class="fa-solid fa-angles-down"></i>
+      <div class="fa-3x">
+        <i class="fa-solid fa-angles-down fa-bounce"></i>
+        </div>
       </nav>
 
       <!-- Header -->
@@ -61,9 +64,12 @@
         <!-- Page-specific (main) content here -->
         <main class="container">
         <section class="new-tweet">
-          <p>What would you like to say?</p>
-          <form action="/tweets" method="POST /tweets/" id="submit-tweet">
-            <label for="tweet-text"></label>
+          <form action="/tweets" id="submit-tweet">
+            <div class="errors">
+              <span class="error-empty"><i class="fa-solid fa-book-skull"></i>Got nothing to say?<i class="fa-solid fa-book-skull"></i></span>
+              <span class="error-exceeds"><i class="fa-solid fa-book-skull"></i>That's a lot of words for one little tweet.<i class="fa-solid fa-book-skull"></i></span>
+              </div>
+            <label for="tweet-text">What would you like to say?</label>
             <textarea
             name="text"
             id="tweet-text"
