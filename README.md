@@ -16,3 +16,10 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+## Screenshots
+
+!["Screenshot of error box for no content"](https://github.com/WhirrrcLicK/tweeter2/blob/master/docs/error-drop-no-content.png?raw=true)
+!["Screenshot of error box for too many characters"](https://github.com/WhirrrcLicK/tweeter2/blob/master/docs/error-drop-too-many-characters.png?raw=true)
+!["Screenshot of full screen view"](https://github.com/WhirrrcLicK/tweeter2/blob/master/docs/full-screen-view.png?raw=true)
+!["Screenshot of mobile view"](https://github.com/WhirrrcLicK/tweeter2/blob/master/docs/mobile-view.png?raw=true)
