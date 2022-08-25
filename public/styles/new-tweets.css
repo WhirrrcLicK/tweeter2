@@ -4,8 +4,8 @@
 
 .container {
   display:flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
 }
 .new-tweet {
   display: flex;
@@ -22,7 +22,7 @@
   align-items: flex-start;
   float: right;
   color: #474631;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 form {
@@ -45,7 +45,6 @@ form {
 .submit-tweet {
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
   flex-wrap: nowrap;
   padding-top: 3px;
   padding-bottom: 15px;

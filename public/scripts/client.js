@@ -7,21 +7,21 @@
 
 $(document).ready(function() {
 
-  $('#submit-tweet').submit(function(event) {
+  $('.submit-tweet').submit(function(event) {
     const tweetValue = $('#tweet-text').val();
     event.preventDefault();
-    if (tweetValue === null || tweetValue === "") {
-      $(".error-empty").slideDown("slow");
-      $(".error-exceeds").hide();
+    if (tweetValue === null || tweetValue === ' ' || tweetValue === '') {
+      checkSectionErrors((".error-empty"), `<i class="fa-solid fa-book-skull"></i>Got nothing to say?<i class="fa-solid fa-book-skull"></i>`, 4000, "slow");
     } else if (tweetValue.length > 140) {
-      $(".error-exceeds").slideDown("slow");
-      $(".error-empty").hide();
+      checkSectionErrors($(".error-exceeds"), `<i class="fa-solid fa-book-skull"></i>That's a lot of words for one little tweet.<i class="fa-solid fa-book-skull"></i>`, 4000, "slow");
     } else {
-      $.ajax('/tweets', {method: 'POST', data: $('#tweet-text').serialize()}).then(function() {
+      $.ajax('/tweets', {method: 'POST', data: $('#tweet-text').serialize()}).then((res) => {
+        $('#tweet-text').val(' ')
+        $('.counter').val(140)
         loadTweets();
-      });
-    }
-  });
+        })
+      }
+    });
 
   const fetchInput = function(str) {
     let div = document.createElement("div");
@@ -35,11 +35,16 @@ $(document).ready(function() {
   loadTweets();
 
   const renderTweets = function(tweets) {
-    let section = $(".all-tweets");
-    section.html(" ");
+    let section = $(".all-tweets").empty();
     for (const tweet of tweets) {
       section.prepend(createTweetElement(tweet));
     }
+  };
+
+  const checkSectionErrors = (section, errMsgHtml, delay, slideSpeed) => {
+    $(section).empty();
+    const output = $(section).append(errMsgHtml).slideDown(slideSpeed).delay(delay).slideUp(slideSpeed);
+    return output;
   };
 
   const createTweetElement = function(tweet) {

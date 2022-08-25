@@ -64,10 +64,10 @@
         <!-- Page-specific (main) content here -->
         <main class="container">
         <section class="new-tweet">
-          <form action="/tweets" id="submit-tweet">
+          <form method="POST" action="/tweets" class="submit-tweet">
             <div class="errors">
-              <span class="error-empty"><i class="fa-solid fa-book-skull"></i>Got nothing to say?<i class="fa-solid fa-book-skull"></i></span>
-              <span class="error-exceeds"><i class="fa-solid fa-book-skull"></i>That's a lot of words for one little tweet.<i class="fa-solid fa-book-skull"></i></span>
+              <span class="error-empty"></span>
+              <span class="error-exceeds"></span>
               </div>
             <label for="tweet-text">What would you like to say?</label>
             <textarea
@@ -76,7 +76,7 @@
             placeholder="Anything but this."
             ></textarea>
             <div class="submit-tweet">
-              <button type="submit">Tweet</button>
+              <button id="submit" type="submit">Tweet</button>
               <output name="counter" class="counter" for="tweet-text">140</output>
             </div>
           </form>

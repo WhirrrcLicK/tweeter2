@@ -14,7 +14,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   margin: 10px;
-  height: 150px;;
+  height: 100%;;
   border: 3px solid #474631;
 }
 
@@ -43,19 +43,18 @@
 
 .avatar {
   float: left;
-  font-size: 35px;
   color: #2B270E;
+  height: 60px;
   margin-left: 5px;
   margin-top: 5px;
 }
 
 .tweet-content {
-  font-size: 18px;
+  font-size: 20px;
   word-break: break-all;
-  border-bottom: 2px solid #474631;
-  margin-left: 5px;
-  margin-right: 5px;;
-  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
 }
 
 .tweet-box:hover {
@@ -65,13 +64,18 @@
 .tweet-footer {
   display: flex;
   justify-content: space-between;
-  font-size: 10px;
+  border-top: 2px solid #474631;
+  font-size: 14px;
+  margin-top: 3.2%;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 .tweet-age {
   font-size: 10px;
   float: left;
   padding-left: 10px;
   padding-top: 2px;
+  padding-bottom: 10px;
 }
 
 .icons {
@@ -79,6 +83,7 @@
   color: #474631;
   padding-right: 5px;
   padding-top: 2px;
+  padding-bottom: 10px;
 }
 
 .fa-cloud-moon {
